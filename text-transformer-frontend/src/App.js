@@ -3,7 +3,7 @@ import './App.scss';
 import Home from './Pages/Home/Home';
 function App() {
   return (
-    <div >
+    <div className='bg-[#d9e4eb]' >
         <Home />
     </div>
   );
