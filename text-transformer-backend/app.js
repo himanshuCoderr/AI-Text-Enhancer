@@ -15,11 +15,15 @@ app.use(express.static("public"))
 // Routes Imports 
 // import router from './src/Routes/TextEhancer.routes.js'
 import TextEnhancerRouter from './src/Routes/TextEhancer.routes.js'
+import EssayWritterRouter from './src/Routes/EssayWritter.routes.js'
+import EmailWritterRouter from './src/Routes/EmailWritter.routes.js'
+
+
 
 // routes declaration 
-
 app.use("/api/v1/postTextenhancer",TextEnhancerRouter)
-
+app.use("/api/v1/postEssayWritter",EssayWritterRouter)
+app.use("/api/v1/postEmailWritter" ,EmailWritterRouter)
 
 app.listen(3001 , ()=>{
     console.log("Server Running ")

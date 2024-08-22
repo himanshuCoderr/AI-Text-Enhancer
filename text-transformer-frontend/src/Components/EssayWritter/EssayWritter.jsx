@@ -17,7 +17,7 @@ const EssayWritter = ({ handleView }) => {
         <div className={`bg-gray-50 min-h-screen flex flex-col md:flex-row justify-center items-center p-4 rounded-lg ${handleView ? 'block' : 'hidden'}`}>
             <div className="md:w-[50%] w-full p-6">
                 <div className="flex justify-between items-center mb-4">
-                    <h1 className="text-2xl font-semibold">Content Improver</h1>
+                    <h1 className="text-2xl font-semibold">Essay Writter</h1>
                 </div>
                 <div className="flex flex-col space-y-4">
                     <textarea
@@ -28,7 +28,7 @@ const EssayWritter = ({ handleView }) => {
                         onChange={(e) => setContent(e.target.value)}
                     />
                     <div className="flex flex-col space-y-2">
-                        <label className="font-medium">How to improve</label>
+                        <label className="font-medium">Way of Writting</label>
                         <select
                             className="border rounded-lg p-2"
                             value={howToImprove}

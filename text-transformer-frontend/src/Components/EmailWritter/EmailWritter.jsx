@@ -20,7 +20,7 @@ const EmailWriter = ({ handleView }) => {
 
   return (
     <div className="bg-gray-50 min-h-screen flex justify-center items-center rounded-lg" style={{ display: handleView ? 'flex' : 'none' }}>
-      <div className="bg-white shadow-lg rounded-lg p-6 w-1/2">
+      <div className=" rounded-lg p-6 w-1/2">
         <div className="flex justify-between items-center mb-4">
           <h1 className="text-2xl font-semibold">AI Email Writer</h1>
         </div>
@@ -79,7 +79,7 @@ const EmailWriter = ({ handleView }) => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 border-l-2 min-h-screen p-6 bg-white shadow-lg rounded-lg">
+      <div className="w-1/2 m-3 border-l-2 min-h-screen p-6 bg-white  rounded-lg">
         <h2 className="text-xl font-semibold mb-4">AI Generated Email</h2>
         <div className="whitespace-pre-wrap">{aiOutput}</div>
       </div>

@@ -4,8 +4,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 config();
 
 const genAI = new GoogleGenerativeAI("AIzaSyABodRJVUhBTsUzf_P-re_qtwevy5PjK0M");
-
-
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function callGeminiAI(userPrompt) {
@@ -21,7 +19,6 @@ async function callGeminiAI(userPrompt) {
     } catch (error) {
         return error
     }
-
 }
 
 const res = await callGeminiAI("Suggest me some good Hindi Indian Songs")
