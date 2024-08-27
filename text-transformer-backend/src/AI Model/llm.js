@@ -21,8 +21,8 @@ async function callGeminiAI(userPrompt) {
     }
 }
 
-const res = await callGeminiAI("Suggest me some good Hindi Indian Songs")
-console.log(res)
+// const res = await callGeminiAI("Suggest me some good Hindi Indian Songs")
+// console.log(res)
 
 
 export default callGeminiAI
